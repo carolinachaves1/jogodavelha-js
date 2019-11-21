@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css">
+    
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <title>Jogo da Velha | Tic Tac Toe</title>
+  </head>
+  <body>
+    <div class="title">
+      <span>JOGO DA VELHA</span>
+    </div>
+    <div class="telaInicial" id="login">
+      <hr>
+      <p style="font-size: 1.5rem; color: #34515E">Login</p>
+    <span style="color: #30cb76">Jogador 1: </span><input class="input_jogador" placeholder="Informe seu nome" id="jogador1" />
+    <span style="color: #30cb76">Jogador 2: </span><input class="input_jogador" placeholder="Informe seu nome" id="jogador2" />
+    <input type="button" class="button" value="Jogar!" onclick="hideShow()"/>
+    </div>
+    <div class="tabuleiro">
+      <div class="linhas">
+        <div class="grid grid-template-columns-4">
+            <div class="item" id="1x1" jogada=""></div>
+            <div class="item" id="1x2" jogada=""></div>
+            <div class="item" id="1x3" jogada=""></div>
+            <div class="item" id="2x1" jogada=""></div>
+            <div class="item" id="2x2" jogada=""></div>
+            <div class="item" id="2x3" jogada=""></div>
+            <div class="item" id="3x1" jogada=""></div>
+            <div class="item" id="3x2" jogada=""></div>
+            <div class="item" id="3x3" jogada=""></div>
+        </div>
+    </div>
+
+
+  </div>
+    <div id="placar">
+      <span style="margin-right: 10px;">Vez de: </span>
+      <span id="jogador"></span>
+    </div>
+    
+    <script src="js.js"></script>
+  </body>
+</html>

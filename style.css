@@ -1,0 +1,176 @@
+body{
+    background-color: #eaeaea;
+    font-family: Roboto;
+}
+
+.title{
+    position: absolute;
+    width: 229px;
+    height: 32px;
+    left: 422px;
+    top: 138px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 35px;
+    display: flex;
+    align-items: center;
+
+    color: #34515E;
+}
+.telaInicial{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    left: 362px;
+    top: 201px;
+    background: #FFFFFF;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    z-index: 100;
+
+    
+}
+
+.telaInicial hr{
+    height: 20px;
+    background-color: #f50f4b;
+    border: none;
+    margin-top: 0px;
+   
+
+}
+
+.tabuleiro{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    left: 362px;
+    top: 201px;
+
+    background: #FFFFFF;
+    box-shadow: 0px 2px 6px rgba(52, 81, 94, 0.35);
+    border-radius: 10px;
+    z-index: 1
+}
+
+.linhas{
+    width: 280px;
+    height: 280px;
+    left: 372px;
+    top: 211px;
+    margin-left: 5px;
+    margin-top: 5px;
+
+    background: #AABDC6;
+}
+
+#placar{
+    position: absolute;
+    width: 300px;
+    height: 70px;
+    left: 362px;
+    top: 491px;
+    color: white;
+    background: yellow;
+    /* background: linear-gradient(175.8deg, #30CB76 9.19%, #18CA68 91.81%); */
+    border-radius: 0px 0px 10px 10px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 23px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+
+    color: #FFFFFF;
+}
+
+
+.grid-template-columns-4 {
+    display: grid;
+	grid-template-rows: 95px 95px 95px;
+    grid-template-columns: 95px 95px 95px;
+    border-top-style: none;
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+    
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFFFFF;
+  }
+
+  .circulo {
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	overflow: hidden;
+	float: left;
+	margin: 15px;
+    transition: 0.3s ease;
+    background-color: black;
+}
+
+.input_jogador {
+    display: inline-block;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    padding: 10px 20px;
+    border: 2px solid rgba(48,203,118,1);
+    -webkit-border-radius: 7px;
+    border-radius: 7px;
+    font-size: 16px;
+    color: rgba(48,203,118,1);
+    -o-text-overflow: clip;
+    text-overflow: clip;
+    margin-bottom: 20px;
+  }
+
+  .input_jogador2 {
+    display: inline-block;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    padding: 10px 20px;
+    border: 2px solid #f50f4b;
+    -webkit-border-radius: 7px;
+    border-radius: 7px;
+    font-size: 6px;
+    color: #f50f4b;
+    -o-text-overflow: clip;
+    text-overflow: clip;
+    margin-bottom: 20px;
+  }
+
+  .button{
+    display: inline-block;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    cursor: pointer;
+    padding: 10px 20px;
+    border: none;
+    -webkit-border-radius: 7px;
+    border-radius: 7px;
+    font-size:  16px;
+    color: rgba(255,255,255,0.9);
+    transition-duration: 0.4s;
+    background-color: #4CAF50;
+  }
+
+  .button:hover {
+    background-color: #f50f4b;
+    color: white;
+  }
+  
